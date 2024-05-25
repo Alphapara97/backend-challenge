@@ -31,7 +31,8 @@ This project is task management system with CRUD operations for tasks and labels
 2. **Set Up a Virtual Environment and Install Dependencies:**
     ```bash
     python -m venv env
-    source env/bin/activate  # for widnows use `env\Scripts\activate`
+    #widnows use `env\Scripts\activate`
+    #mac use `source env/bin/activate`  
     pip install -r requirements.txt
 
 3. **Run Migartions:**
@@ -43,22 +44,48 @@ This project is task management system with CRUD operations for tasks and labels
     ```bash
     python manage.py createsuperuser
 
-5.Running Tests:
-python manage.py test tasks
+5. **Running Tests:**
+    ```bash
+    python manage.py test tasks
 
-6.Run the Development Server: 
-python manage.py runserver
+6. **Run the Development Server:** 
+    ```bash
+    python manage.py runserver
 
-Users for Admin Site
+
+**Users for Admin Site**
 To log into the Django admin site, you can use the superuser credentials you created earlier.
 
 Alternatively, you can use the following sample users:
 
-Username: user1, Password: password1
-Username: user2, Password: password2
+Username: user1, Password: akkpass123
+Username: user2, Password: akkpass123
 
-7. Access the API Documentation:
+7. **Access the API Documentation:**
+    
     Swagger UI: http://127.0.0.1:8000/swagger/
-    Redoc: http://127.0.0.1:8000/redoc/
 
 ## ScreenShots from Swagger:
+**Get Labels:** 
+
+![Screenshot of Get label](aak-1.png)
+
+**Post Labels:** 
+
+![Screenshot of Post label](aak-2.png)
+
+**Get Tasks:**
+
+![Screenshot of Get Tasks](aak-3.png)
+
+**Post Tasks:** 
+
+![Screenshot of Post Tasks](aak-4.png)
+
+
+
+
+
+**Author:** Ansuman Sasmal  
+**Email:** ansuman.sasmal97@gamil.com  
+**Date:** May 25, 2024
