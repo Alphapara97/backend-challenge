@@ -9,12 +9,15 @@ class TaskViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
+        #  return taskes owned by the current user
         return self.queryset.filter(owner=self.request.user)
 
     def perform_create(self, serializer):
+        # to set owner to the current task
         serializer.save(owner=self.request.user)
     
     def perform_update(self, serializer):
+        # confirms the owner remains the current user during updates
         serializer.save(owner=self.request.user)
 
 class LabelViewSet(viewsets.ModelViewSet):

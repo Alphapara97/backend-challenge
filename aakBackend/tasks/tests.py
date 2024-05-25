@@ -4,6 +4,8 @@ from .models import Task, Label
 from rest_framework.test import APIClient
 from rest_framework import status
 
+
+# test1: the task is created correctly; task count increases when a new task is created
 class ModelTestCase(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='user3', password='akkpass123')
@@ -11,6 +13,7 @@ class ModelTestCase(TestCase):
         self.task = Task.objects.create(title='Finish Assignment', description='Complete by tonight', owner=self.user)
         self.task.labels.add(self.label)
 
+    
     def test_task_creation(self):
         self.assertEqual(self.task.title, 'Finish Assignment')
         self.assertEqual(self.task.owner.username, 'user3')
@@ -24,6 +27,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(old_count + 1, new_count)
 
 
+#Test 2: retrieve tasks;create a task;update a task; delete task
 class TaskAPITest(TestCase):
     def setUp(self):
         self.client = APIClient()
@@ -62,6 +66,7 @@ class TaskAPITest(TestCase):
         self.assertEqual(Task.objects.filter(id=task_id).count(), 0)
 
 
+#test 3: create a label, update a label, delete a label
 class LabelAPITest(TestCase):
     def setUp(self):
         self.client = APIClient()

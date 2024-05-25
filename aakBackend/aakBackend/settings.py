@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
 
 # Application definition
 
+# added rest tokenauth for auth, and dfg_yasg for swagger.
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
