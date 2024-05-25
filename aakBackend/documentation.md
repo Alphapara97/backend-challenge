@@ -53,34 +53,41 @@ This project is task management system with CRUD operations for tasks and labels
     python manage.py runserver
 
 
-**Users for Admin Site**
-To log into the Django admin site, you can use the superuser credentials you created earlier.
-
-Alternatively, you can use the following sample users:
-
-Username: user1, Password: akkpass123
-Username: user2, Password: akkpass123
-
+**Users for Admin Site**  
+  
+To log into the Django admin site, you can use the superuser credentials you created earlier.  
+  
+Alternatively, you can use the following sample users:    
+  
+Username: user1, Password: akkpass123  
+Username: user2, Password: akkpass123  
+  
 7. **Access the API Documentation:**
     
     Swagger UI: http://127.0.0.1:8000/swagger/
 
-## ScreenShots from Swagger:
+
+
+## ScreenShots from Swagger:  
+
 **Get Labels:** 
 
 ![Screenshot of Get label](aak-1.png)
 
-**Post Labels:** 
+**Post Labels:**   
 
-![Screenshot of Post label](aak-2.png)
+![Screenshot of Post label](aak-2.png)  
+
 
 **Get Tasks:**
 
-![Screenshot of Get Tasks](aak-3.png)
+![Screenshot of Get Tasks](aak-3.png)  
+
 
 **Post Tasks:** 
 
-![Screenshot of Post Tasks](aak-4.png)
+![Screenshot of Post Tasks](aak-4.png)  
+
 
 
 
